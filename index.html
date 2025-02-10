@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exemplo de PÃ¡gina HTML</title>
+    <title>Exemplo de Página HTML</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -41,6 +41,28 @@
         .btn:hover {
             background-color: #45a049;
         }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -52,16 +74,23 @@
 <main>
     <section>
         <h2>Sobre o Projeto</h2>
-        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criaÃ§Ã£o de branches, commits, Pull Requests e revisÃµes de cÃ³digo.</p>
+        <p>Este projeto tem como objetivo ensinar o fluxo de trabalho do GitHub, incluindo a criação de branches, commits, Pull Requests e revisões de código.</p>
     </section>
 
     <section>
-        <h2>Funcionalidades</h2>
-        <ul>
-            <li>VisualizaÃ§Ã£o de pÃ¡ginas HTML simples.</li>
-            <li>InteraÃ§Ã£o com formulÃ¡rios.</li>
-            <li>Design simples e responsivo.</li>
-        </ul>
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
     </section>
 
     <button class="btn">Clique aqui para aprender mais!</button>
