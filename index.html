@@ -41,6 +41,28 @@
         .btn:hover {
             background-color: #45a049;
         }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="email"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
     </style>
 </head>
 <body>
@@ -61,7 +83,22 @@
             <li>Visualizaçãoo de paginas HTML simples.</li>
             <li>Interação com formulários.</li>
             <li>Design simples e responsivo.</li>
-        </ul>
+        </ul>                   
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        
+        </form>
+
     </section>
 
     <button class="btn">Clique aqui para aprender mais!</button>
